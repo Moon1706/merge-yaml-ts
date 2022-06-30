@@ -1,4 +1,3 @@
--
- something: else
- bar:
-  y: z
+- something: else
+  bar:
+    y: z

@@ -1,5 +1,4 @@
--
- foo: bar
- bar:
-  foo: x
-  x: y
+- foo: bar
+  bar:
+    foo: x
+    x: y

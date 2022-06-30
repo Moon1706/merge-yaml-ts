@@ -1,19 +1,12 @@
 {
   "compilerOptions": {
-    "declaration": true,
-    "moduleResolution": "node",
+    "target": "es2021",
     "module": "commonjs",
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "declaration": true,
     "outDir": "dist",
     "rootDir": "src",
-    "strict": true,
-    "target": "ES2020"
+    "strict": true
   },
-  "include": [
-    "src/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
 }
