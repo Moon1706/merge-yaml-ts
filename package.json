@@ -1,0 +1,36 @@
+{
+  "name": "merge-yaml-ts",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Mikita Sharayeu <nick.moon.1705@gmail.com>",
+  "repository": "github:Moon1706/merge-yaml-ts",
+  "description": "Very thin wrapper to merge multiple yaml files",
+  "main": "dist/src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "default": "npm run build && npm run test",
+    "clean": "rimraf dist",
+    "copyfiles": "copyfiles -u 1 src/**/*.yml dist/",
+    "build": "npm run clean && tsc && npm run copyfiles",
+    "test": "jest dist/"
+  },
+  "keywords": [
+    "yaml",
+    "merge",
+    "typescript"
+  ],
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.3",
+    "@types/js-yaml": "^4.0.5",
+    "@types/lodash": "^4.14.182",
+    "copyfiles": "^2.4.1",
+    "jest": "^28.1.2",
+    "rimfar": "^3.0.2-omega",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4"
+  }
+}
