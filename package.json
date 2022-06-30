@@ -1,6 +1,6 @@
 {
   "name": "merge-yaml-ts",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "license": "MIT",
   "author": "Mikita Sharayeu <nick.moon.1705@gmail.com>",
   "repository": {
@@ -25,7 +25,6 @@
     "typescript"
   ],
   "dependencies": {
-    "default": "^0.1.1",
     "js-yaml": "^4.1.0",
     "lodash": "^4.17.21"
   },
