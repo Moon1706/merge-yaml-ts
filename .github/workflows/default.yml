@@ -1,0 +1,22 @@
+name: default
+
+on:
+  pull_request:
+    branches: [develop, main]
+  push:
+    branches: [develop, main]
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu
+    steps:
+      - uses: actions/checkout@v2
+      - name: "Install NPM requirements"
+        run: npm install
+      - name: "Lint"
+        run: npm run lint
+      - name: "Build"
+        run: npm run build
+      - name: "Test"
+        run: npm run test
