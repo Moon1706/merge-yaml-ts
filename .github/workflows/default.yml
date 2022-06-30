@@ -20,3 +20,17 @@ jobs:
         run: npm run build
       - name: "Test"
         run: npm run test
+  publish:
+    runs-on: ubuntu-latest
+    if: |
+      github.event_name == 'push' &&
+      github.head_ref == 'main'
+    steps:
+      - uses: actions/checkout@v2
+      - name: "Install NPM requirements"
+        run: npm install
+      - name: "Build module"
+        run: npm run build
+      - uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
