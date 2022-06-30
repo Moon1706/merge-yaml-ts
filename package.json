@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "license": "MIT",
   "author": "Mikita Sharayeu <nick.moon.1705@gmail.com>",
-  "repository": "github:Moon1706/merge-yaml-ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moon1706/merge-yaml-ts.git"
+  },
   "description": "Very thin wrapper to merge multiple yaml files",
   "main": "dist/src/index.js",
   "type": "commonjs",
@@ -34,5 +37,9 @@
     "rimfar": "^3.0.2-omega",
     "ts-node": "^10.8.1",
     "typescript": "^4.7.4"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/Moon1706/merge-yaml-ts/issues"
+  },
+  "homepage": "https://github.com/Moon1706/merge-yaml-ts#readme"
 }
