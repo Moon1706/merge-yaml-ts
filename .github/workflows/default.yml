@@ -3,8 +3,14 @@ name: default
 on:
   pull_request:
     branches: [develop, main]
+    paths-ignore:
+      - 'README.md'
+      - 'LICENSE'
   push:
     branches: [develop, main]
+    paths-ignore:
+      - 'README.md'
+      - 'LICENSE'
   workflow_dispatch:
 
 jobs:
