@@ -11,7 +11,7 @@
   "main": "dist/src/index.js",
   "type": "commonjs",
   "scripts": {
-    "default": "npm run fmt && npm run build && npm run test",
+    "default": "npm install && npm run fmt && npm run build && npm run test",
     "clean": "rimraf dist",
     "copyfiles": "copyfiles -u 1 src/**/*.yml dist/",
     "build": "npm run clean && tsc && npm run copyfiles",
