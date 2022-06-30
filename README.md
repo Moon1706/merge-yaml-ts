@@ -8,12 +8,6 @@
 This is Typescript wrapper utility over js-yaml which will merge the multiple yaml fles
 and safeload them and return the parsed yml.
 
-#### Install
-
-```shell
-npm i merge-yaml-ts
-```
-
 #### Example
 
 ```js
